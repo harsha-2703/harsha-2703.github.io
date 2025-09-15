@@ -6,7 +6,7 @@ function Experience() {
       company: "DataReveal AI",
       location: "Chennai, Tamil Nadu",
       role: "AI Developer Intern",
-      duration: "Jan 2025 - July 2025",
+      duration: "Jan 2025 - Aug 2025",
       logo: "/images/datareveal-logo.jpg",
       points: [
         "Automated extraction and processing of candidate data from diverse sources, raising ATS accuracy and reducing manual entry time, by embedding Large Language Models (LLMs) for intelligent parsing and information retrieval.",
@@ -83,3 +83,4 @@ function Experience() {
 }
 
 export default Experience;
+
