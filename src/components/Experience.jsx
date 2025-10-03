@@ -3,6 +3,16 @@ import { FaBuilding } from "react-icons/fa";
 function Experience() {
   const experiences = [
     {
+      company: "Mobius Knowledge Services",
+      location: "Chennai, Tamil Nadu",
+      role: "AI Developer",
+      duration: "Sep 2025 - Present",
+      logo: "/images/mobius-logo.png",
+      points: [
+        "Led the automation of RFP (Request for Proposal) classification using Large Language Models (LLMs) to categorize RFPs based on predefined keyword sets, significantly reducing manual review time and improving overall response accuracy.",
+      ],
+    },
+    {
       company: "DataReveal AI",
       location: "Chennai, Tamil Nadu",
       role: "AI Developer Intern",
@@ -83,5 +93,6 @@ function Experience() {
 }
 
 export default Experience;
+
 
 
