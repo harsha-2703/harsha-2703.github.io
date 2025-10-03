@@ -18,13 +18,6 @@ function Contact() {
           </div>
 
           <div className="flex items-center gap-2">
-            <AiOutlinePhone className="text-purple-700 w-6 h-6" />
-            <a href="tel:+919445506527" className="underline">
-              +91 9445506527
-            </a>
-          </div>
-
-          <div className="flex items-center gap-2">
             <FaLinkedin className="text-purple-700 w-6 h-6" />
             <a
               href="https://www.linkedin.com/in/harsharaj-r-412b17259"
@@ -42,3 +35,4 @@ function Contact() {
 }
 
 export default Contact;
+
