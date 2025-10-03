@@ -9,7 +9,7 @@ function Experience() {
       duration: "Sep 2025 - Present",
       logo: "/images/mobius-logo.png",
       points: [
-        "Led the automation of RFP (Request for Proposal) classification using Large Language Models (LLMs) to categorize RFPs based on predefined keyword sets, significantly reducing manual review time and improving overall response accuracy.",
+        "Led the automation of RFP (Request for Proposal) classification using the Retrieval-Augmented Generation (RAG) method with Large Language Models (LLMs). Categorized RFPs based on predefined keyword sets, significantly reducing manual review time and enhancing overall response accuracy.",
       ],
     },
     {
