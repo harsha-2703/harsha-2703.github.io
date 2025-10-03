@@ -1,4 +1,4 @@
-import { FaBuilding } from "react-icons/fa"; // 👈 import placeholder icon
+import { FaBuilding } from "react-icons/fa";
 
 function Experience() {
   const experiences = [
@@ -83,4 +83,5 @@ function Experience() {
 }
 
 export default Experience;
+
 
