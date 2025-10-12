@@ -8,15 +8,13 @@ const projectDetails = {
     description: (
       <>
         {/* Intro */}
+        <h2 className="text-2xl font-semibold text-purple-700 mb-4 border-b border-gray-300 pb-2">Introduction</h2>
         <p className="mb-6">
-          Skin cancer is one of the most prevalent tumors among the elderly. Early identification can increase the survival rate up to 95% if 
-          treated properly. Traditional segmentation methods (manual HSV tweaking & CAD tools) 
-          were either time-consuming or inaccurate. With the evolution of deep learning, 
-          segmentation performance has improved significantly.
+          Skin cancer is one of the most prevalent tumors among the elderly. Early identification can increase the survival rate up to 95% if treated properly. Traditional segmentation methods (manual HSV tweaking & CAD tools) were either time-consuming or inaccurate. With the evolution of deep learning, segmentation performance has improved significantly.
         </p>
 
         {/* Manual Segmentation */}
-        <h2 className="text-xl font-semibold text-purple-700 mb-4">Manual Segmentation</h2>
+        <h2 className="text-2xl font-semibold text-purple-700 mb-4 border-b border-gray-300 pb-2">Manual Segmentation</h2>
         <div className="flex flex-col items-center mb-8">
           <img
             src="/images/skin-lesion/manual-segmentation.jpg"
@@ -24,12 +22,12 @@ const projectDetails = {
             className="rounded-lg shadow-lg"
           />
           <p className="text-sm text-gray-600 mt-2">
-            Example of manual segmentation by tweaking HSV values.
+            Example of manual segmentation by tweaking HSV values
           </p>
         </div>
 
         {/* Model Comparisons */}
-        <h2 className="text-xl font-semibold text-purple-700 mb-4">Model Comparisons</h2>
+        <h2 className="text-2xl font-semibold text-purple-700 mb-4 border-b border-gray-300 pb-2">Model Comparisons</h2>
         <div className="grid md:grid-cols-2 gap-6 mb-10">
           <div className="bg-gray-50 rounded-lg shadow p-4 text-center">
             <img src="/images/skin-lesion/unet-1.png" alt="U-Net result" className="rounded mb-2" />
@@ -50,44 +48,49 @@ const projectDetails = {
         </div>
 
         {/* Methodology */}
-        <h2 className="text-xl font-semibold text-purple-700 mb-4">Our Approach</h2>
+        <h2 className="text-2xl font-semibold text-purple-700 mb-4 border-b border-gray-300 pb-2">Approach</h2>
         <p className="mb-4">
-          A medical image contains both <strong>local structural information </strong> 
-          and <strong>global statistical information</strong>. 
-          We used a <strong>U-Net decoder</strong> for local features and a 
-          <strong> Swin Transformer backbone</strong> for global context. 
-          Together, this Swin-UNet hybrid architecture enables more accurate lesion segmentation.
+          Medical images contain both <strong>local structural information</strong> and <strong>global statistical information</strong>. 
+          A <strong>U-Net decoder</strong> is employed to capture local features, while a <strong>Swin Transformer backbone</strong> extracts global context. 
+          This <strong>Swin-UNet</strong> hybrid architecture enables more accurate lesion segmentation and incorporates two specialized modules for enhanced texture representation.
         </p>
         <ul className="list-disc ml-6 mb-6">
           <li>
-            <strong>Module 1:</strong> Fuses structural & statistical texture information with 
-            a dynamic gating mechanism and comprehensive attention.
+            <strong>Module 1: Structural-Statistical Texture Fusion Module</strong><br />
+            This module effectively fuses structural and statistical texture information. 
+            A gating mechanism dynamically controls the fusion intensity, ensuring that only the most relevant information is integrated. 
+            Additionally, a Comprehensive Attention mechanism enhances feature representation by capturing long-range dependencies and multi-scale texture cues.
           </li>
           <li>
-            <strong>Module 2:</strong> Enhances multi-scale statistical features using 
-            embedding enrichment and a novel Te-FFN.
+            <strong>Module 2: Multi-Scale Texture Enhancement Module</strong><br />
+            This module enhances multi-scale statistical texture features. 
+            It incorporates a Multi-Scale Embedding Enhancement strategy to extract rich texture details across scales. 
+            Furthermore, a novel Texture-Enhanced Feed-Forward Network (TE-FFN) reinforces the model's ability to maintain texture consistency during feature refinement.
           </li>
         </ul>
 
         {/* Dataset Performance */}
-        <h2 className="text-xl font-semibold text-purple-700 mb-4">Dataset Performance</h2>
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
-          <div className="bg-gray-50 rounded-lg shadow p-4 text-center">
-            <img src="/images/skin-lesion/ham-graph.jpg" alt="HAM10000" className="rounded mb-2" />
-            <p className="text-sm">Tested on HAM10000</p>
+        <h2 className="text-2xl font-semibold text-purple-700 mb-4 border-b border-gray-300 pb-2">Dataset Performance</h2>
+        <>
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-gray-50 rounded-lg shadow p-4 text-center">
+              <img src="/images/skin-lesion/ham-graph.jpg" alt="HAM10000" className="rounded mb-2" />
+              <p className="text-sm">Tested on HAM10000</p>
+            </div>
+            <div className="bg-gray-50 rounded-lg shadow p-4 text-center">
+              <img src="/images/skin-lesion/ph2-graph.jpg" alt="PH2" className="rounded mb-4" />
+              <p className="text-sm">Tested on PH2</p>
+            </div>
+            <div className="bg-gray-50 rounded-lg shadow p-4 text-center">
+              <img src="/images/skin-lesion/isic-graph.png" alt="ISIC" className="rounded mb-4" />
+              <p className="text-sm">ISIC Dataset</p>
+            </div>
           </div>
-          <div className="bg-gray-50 rounded-lg shadow p-4 text-center">
-            <img src="/images/skin-lesion/ph2-graph.jpg" alt="PH2" className="rounded mb-2" />
-            <p className="text-sm">Tested on PH2</p>
-          </div>
-          <div className="bg-gray-50 rounded-lg shadow p-4 text-center">
-            <img src="/images/skin-lesion/isic-graph.png" alt="ISIC" className="rounded mb-2" />
-            <p className="text-sm">ISIC Dataset</p>
-          </div>
-        </div>
+          <p className="text-sm text-gray-600 text-center mb-6">X-axis: Dice Score | Y-axis: Number of Images</p>
+        </>
 
         {/* Results */}
-        <h2 className="text-xl font-semibold text-purple-700 mb-4">Best Results</h2>
+        <h2 className="text-2xl font-semibold text-purple-700 mb-4 border-b border-gray-300 pb-2">Best Results</h2>
         <div className="grid md:grid-cols-3 gap-4 mb-6">
           <img src="/images/skin-lesion/swin-unet-best1.png" alt="Best result 1" className="rounded shadow" />
           <img src="/images/skin-lesion/swin-unet-best2.png" alt="Best result 2" className="rounded shadow" />
@@ -96,18 +99,15 @@ const projectDetails = {
 
         {/* Conclusion */}
         <p>
-          Using the <strong>Dice Similarity Coefficient (DSC)</strong> as the evaluation metric, 
-          our proposed Swin-UNet with texture-aware modules achieved a 
-          <strong> Dice score of 90.28% on the ISIC2018 dataset</strong>, 
-          demonstrating the effectiveness of attention mechanisms and texture-aware modules.
+          Using the <strong>Dice Similarity Coefficient (DSC)</strong> as the evaluation metric, the proposed Swin-UNet achieved a <strong>Dice score of 90.28% on the ISIC2018 dataset</strong>, highlighting the effectiveness of the attention mechanisms and texture-aware modules.
         </p>
       </>
     ),
   },
   "virtual-assistant": {
-    title: "Real-Time Virtual Assistant with Multimodal LLM",
+    title: "Real-Time Virtual Assistant with Multi-LLM Integration",
     description: (
-      <div className="max-w-7xl mx-auto px-8 py-12 space-y-16 text-gray-800 text-lg leading-relaxed">
+      <div className="max-w-7xl mx-auto px-8 py-4 space-y-16 text-gray-800 text-lg leading-relaxed">
         {/* Screenshot */}
         <div className="w-full flex justify-center">
           <img
@@ -119,9 +119,9 @@ const projectDetails = {
 
         {/* Overview */}
         <div>
-          <h2 className="text-2xl font-bold text-purple-700 mb-4 border-b border-gray-300 pb-2">Overview</h2>
+          <h2 className="text-2xl font-semibold text-purple-700 mb-4 border-b border-gray-300 pb-2">Overview</h2>
           <p>
-            A <strong>real-time, memory-efficient multimodal AI assistant</strong> designed to run entirely on CPU by
+            A <strong>real-time, memory-efficient AI assistant</strong> designed to run entirely on CPU by
             leveraging <strong>smaller LLMs</strong> without sacrificing performance. The system supports
             <strong> voice, text, and webcam</strong> based interactions, all processed with <strong>low latency</strong>.
             Incoming queries are routed through a <strong>Prompt Classifier (Gemma 3 API)</strong> to determine if they
@@ -132,7 +132,7 @@ const projectDetails = {
 
         {/* Architecture */}
         <div>
-          <h2 className="text-2xl font-bold text-purple-700 mb-4 border-b border-gray-300 pb-2">Architecture</h2>
+          <h2 className="text-2xl font-semibold text-purple-700 mb-4 border-b border-gray-300 pb-2">Architecture</h2>
           <img
             src="/images/virtual-assistant/architecture.png"
             alt="Virtual Assistant Architecture"
@@ -142,7 +142,7 @@ const projectDetails = {
 
         {/* Two Interfaces */}
         <div>
-          <h2 className="text-2xl font-bold text-purple-700 mb-4 border-b border-gray-300 pb-2">Two Interfaces</h2>
+          <h2 className="text-2xl font-semibold text-purple-700 mb-4 border-b border-gray-300 pb-2">Two Interfaces</h2>
           <div className="grid md:grid-cols-2 gap-10">
             {/* Terminal Version */}
             <div className="bg-gray-50 rounded-lg p-6 shadow-md h-full">
@@ -174,7 +174,7 @@ const projectDetails = {
 
         {/* Backend & Local Deployment */}
         <div>
-          <h2 className="text-2xl font-bold text-purple-700 mb-4 border-b border-gray-300 pb-2">Backend & Local Deployment</h2>
+          <h2 className="text-2xl font-semibold text-purple-700 mb-4 border-b border-gray-300 pb-2">Backend & Local Deployment</h2>
           <p>
             The backend is implemented in <strong>FastAPI</strong> and fully containerized with <strong>Docker</strong>.
             Users can pull the Docker image and run it locally, connecting seamlessly with the React frontend.
@@ -191,7 +191,7 @@ const projectDetails = {
 
         {/* Tools & Models */}
         <div>
-          <h2 className="text-2xl font-bold text-purple-700 mb-4 border-b border-gray-300 pb-2">Tools & Models</h2>
+          <h2 className="text-2xl font-semibold text-purple-700 mb-4 border-b border-gray-300 pb-2">Tools & Models</h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <li className="flex items-center gap-2 text-base">
               <AiOutlineAudio className="text-purple-600 text-3xl" />
@@ -222,7 +222,7 @@ const projectDetails = {
 
         {/* Development & Deployment */}
         <div>
-          <h2 className="text-2xl font-bold text-purple-700 mb-4 border-b border-gray-300 pb-2">Development & Deployment</h2>
+          <h2 className="text-2xl font-semibold text-purple-700 mb-4 border-b border-gray-300 pb-2">Development & Deployment</h2>
           <ul className="list-disc list-inside ml-4 space-y-2">
             <li>Frontend built with React.js + Tailwind CSS, deployed on GitHub Pages</li>
             <li>Backend containerized with FastAPI, image published to Docker Hub</li>
