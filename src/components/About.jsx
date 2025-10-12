@@ -19,13 +19,12 @@ function About({ imageSrc, resumeSrc }) {
           </h2>
 
           <p className="mt-4 text-lg text-gray-600 leading-relaxed">
-            Hello! I’m <span className="font-semibold text-purple-700">Harsharaj Rajaselvam</span>, 
-            a B.Tech graduate in <span className="font-semibold">Artificial Intelligence and Data Science </span> 
+            I’m a B.Tech graduate in <span className="font-semibold">Artificial Intelligence and Data Science </span> 
             from <span className="font-medium">Shiv Nadar University, Chennai</span>.  
           </p>
 
           <p className="mt-4 text-lg text-gray-600 leading-relaxed">
-            I’m passionate about building intelligent systems that solve real-world challenges, from automating workflows and AI-powered assistants to computer vision models. I enjoy turning ideas into practical, impactful solutions and continuously exploring cutting-edge technologies to push the boundaries of AI and data-driven innovation.
+            I’m passionate about building intelligent systems that solve real-world challenges, from automating workflows and AI-powered assistants to computer vision models. I enjoy turning ideas into practical, impactful solutions and continuously exploring cutting-edge technologies to push the boundaries of AI and machine learning applications.
           </p>
 
           {/* Resume Button */}
