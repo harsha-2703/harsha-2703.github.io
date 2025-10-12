@@ -12,8 +12,8 @@ const projects = [
   },
   {
     id: "virtual-assistant",
-    title: "Real-Time Virtual Assistant with Multimodal LLM",
-    description: `Built a low-latency real-time multimodal AI assistant using Faster-Whisper & SpeechRecognition for transcription, Gemini API for webcam-based reasoning, and Gemma 3 & LLaMA 3.2 via Ollama for dialogue and tool execution. Delivered offline TTS for natural responses, deployed the frontend (React & Tailwind) on GitHub Pages, containerized the backend (FastAPI → Docker Hub), and published a hybrid STT package on PyPI.`,
+    title: "Real-Time Virtual Assistant with Multi-LLM Integration",
+    description: `Built a low-latency real-time AI assistant using Faster-Whisper & SpeechRecognition for transcription, Gemini API for webcam-based reasoning, and Gemma 3 & LLaMA 3.2 via Ollama for dialogue and tool execution. Delivered offline TTS for natural responses, deployed the frontend (React & Tailwind) on GitHub Pages, containerized the backend (FastAPI → Docker Hub), and published a hybrid STT package on PyPI.`,
     image: "/images/virtual-assistant-proj.png",
     links: [
       {
