@@ -271,7 +271,7 @@ function ProjectDetail() {
   return (
     <div
       className={`mx-auto px-6 py-10 ${
-        id === "skin-lesion" ? "max-w-7xl" : "max-w-4xl"
+        id === "skin-lesion" ? "max-w-7xl" : "max-w-6xl"
       }`}
     >
       <h1 className="text-3xl font-bold mb-8 text-center">{project.title}</h1>
