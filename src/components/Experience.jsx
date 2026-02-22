@@ -9,7 +9,9 @@ function Experience() {
       duration: "Sep 2025 - Present",
       logo: "/images/mobius-logo.png",
       points: [
-        "Led the automation of RFP (Request for Proposal) classification using the Retrieval-Augmented Generation (RAG) method with Large Language Models (LLMs). Categorized RFPs based on predefined keyword sets, significantly reducing manual review time and enhancing overall response accuracy.",
+        "Optimized and maintained AI-driven backend workflows for Vue.ai, an AI-powered enterprise orchestration platform automating business processes in retail and finance. Resolved client-reported issues, ensuring reliable automation for retail deployments.",
+        "Led the automation of RFP (Request for Proposal) classification using Retrieval-Augmented Generation (RAG), categorizing RFPs based on predefined keyword sets, which significantly reduced manual review time and improved response accuracy.",
+        "Automated competitor product analysis by mapping attribute names and values, generating actionable insights to optimize product listings."
       ],
     },
     {
@@ -19,8 +21,8 @@ function Experience() {
       duration: "Jan 2025 - Aug 2025",
       logo: "/images/datareveal-logo.jpg",
       points: [
-        "Automated extraction and processing of candidate data from diverse sources, raising ATS accuracy and reducing manual entry time, by embedding Large Language Models (LLMs) for intelligent parsing and information retrieval.",
-        "Enhanced system performance and UX by crafting responsive, cross-platform interfaces with React.js, Tailwind CSS, and Redux Toolkit; linked real-time APIs, modularized components, and streamlined state management.",
+        "Automated extraction and processing of candidate data from diverse sources, raising ATS accuracy and reducing manual entry time, by embedding LLMs for intelligent parsing and information retrieval.",
+        "Enhanced system performance and UX by crafting responsive, cross-platform interfaces with React.js and Tailwind CSS. Linked real-time APIs, modularized components, and streamlined state management."
       ],
     },
     {
